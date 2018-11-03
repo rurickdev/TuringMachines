@@ -56,7 +56,7 @@ def restar(cad1, cad2):
             #(q1,-)=(q0,1,S)
             elif cinta[i]=='-':
                 cinta[i]='1'
-                q0,q1=q1,q0
+                q1,q0=q0,q1
             #(q1,b)=(h,b,S)
             else:
                 cinta[i]='b'
@@ -77,7 +77,7 @@ def restar(cad1, cad2):
                 q3,q4=q4,q3
         #Accoines en el estado q4
         elif (q4==1):
-            #(q4,1)=(q1,1,S)
+            #(q4,1)=(q5,1,S)
             if cinta[i]=='1':
                 q4,q5=q5,q4
             #(q4,-)=(h,b,S)
